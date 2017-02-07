@@ -11,19 +11,19 @@ Tested on Ubuntu Gnome 16.04 LTS.
 
 ### Clone the repository or donwload the script: ###
 
-<code>git clone repository </code>
+<code>git clone https://github.com/leon13/i3lock-config.git </code>
 
 ### Make the script executable ###
 
 Go to the path, where the script <code>my-i3lock-config.sh</code> is located. In my case it is in my home folder <code>$HOME/my-i3lock-config.sh</code>. Now we want to make the script executable. Best way is to create a directory <code>bin</code> in the homedir (<code>mkdir -p ~/bin</code>). Then write a new script <code>lock</code> that runs the script <code>my-i3lock-script.sh</code> and save it in <code>~/bin</code>. Then make it executable.
 
-<code>$ mkdir -p ~/bin
+<pre><code>$ mkdir -p ~/bin
 $ cat > ~/bin/lock << 'EOF'
 $ #!/bin/sh
 $ exec $HOME/lock.sh
 $ EOF
 $ chmod +x ~/bin/lock
-</code>
+</code></pre>
 
 You need to log out and back in again, if you haven't had a <code>~/bin</code> directory before. This will add it to your PATH. Now you should be able to run <code>lock</code> from the command line and it should lock the screen.
 
