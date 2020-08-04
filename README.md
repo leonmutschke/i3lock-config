@@ -7,11 +7,8 @@ Tested on Ubuntu Gnome 16.04 LTS.
 
 ### Install required packages: ###
 
-<code>sudo apt install i3lock imagemagick, scrot</code>
+<code>sudo apt install i3lock imagemagick scrot</code>
 
-### Clone the repository or donwload the script: ###
-
-<code>git clone https://github.com/leon13/i3lock-config.git </code>
 
 ### Make the script executable ###
 
