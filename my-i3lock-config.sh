@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PICTURE=/tmp/i3lock.png
-SCREENSHOT="scrot $PICTURE"
+SCREENSHOT="scrot -z $PICTURE"
 
 BLUR="5x4"
 
